@@ -1,0 +1,300 @@
+body {
+    background-color: #ebeefd;
+    font-family: 'Poppins', sans-serif;
+    margin: 4% auto;
+}
+
+/* SIGN UP FIRST COL START */
+.sign-up-first-col {
+    text-align: center;
+}
+
+.sign-up-img {
+     width: 80%;
+}
+
+/* SIGN UP FIRST COL END */
+
+/* SIGN UP SECOND COL START */
+/* AGENT STUDENT CHECKBOX  */
+
+.agent-student {
+    margin: 10% auto 5%;
+}
+
+.agent-student-label {
+    height: 25px;
+    width: 60px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.agent-student-label:hover {
+    -webkit-transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+    transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+}
+
+.agent-student-checkbox:checked~.agent-student-label:hover {
+    -webkit-transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+    transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+}
+
+.agent-student-checkbox {
+    display: none;
+}
+
+.agent-student-checkbox:checked~.agent-student-label::before {
+    left: 30px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.agent-student-label::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    background-image: linear-gradient(130deg,
+            #757272 10%,
+            #ffffff 11%,
+            #726f6f 62%);
+    left: 10px;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+/* AGENT STUDENT CHECKBOX  */
+
+.sign-up-header {
+    font-size: 1.4rem;
+    color: #4B5FDC;
+    font-weight: 600;
+}
+
+.sign-up-header-icon {
+    margin-right: .2rem;
+}
+
+.sign-up-second-col {
+    padding-right: 5%;
+}
+
+/* FORM START  */
+input {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input[type="checkbox"] {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-label,
+.form-check-label,
+.forgot-password,
+.account {
+    font-size: .8rem;
+}
+
+.check-boxes-div {
+    margin: 10% 0 5%;
+}
+
+.terms-link {
+    text-decoration: none;
+}
+
+.forgot-password {
+    float: right;
+    text-decoration: none;
+}
+
+.account-link {
+    text-decoration: none;
+}
+
+.create-account-button,
+.google-button {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-icons {
+    margin: .2rem .4rem;
+}
+
+/* FORM END  */
+/* SIGN UP SECOND COL END */
+
+/* start of tablet styles */
+@media screen and (min-width: 767px) {
+    .sign-up-first-col {
+        display: none;
+    }
+    
+.sign-up-second-col {
+    padding-right: 0;
+}
+}
+    
+/* start of pc styles */
+@media screen and (min-width: 991px) {
+    body {
+        background-color: #ebeefd;
+        font-family: 'Poppins', sans-serif;
+        margin: 4% auto;
+    }
+    
+    /* SIGN UP FIRST COL START */
+    .sign-up-first-col {
+        display: block;
+        text-align: center;
+    }
+    
+    .sign-up-img {
+         width: 80%;
+    }
+    
+    /* SIGN UP FIRST COL END */
+    
+    /* SIGN UP SECOND COL START */
+    /* AGENT STUDENT CHECKBOX  */
+    
+    .agent-student {
+        margin: 0 0 2%;
+    }
+    
+    .agent-student-label {
+        height: 25px;
+        width: 60px;
+        background-color: #ffffff;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        transition: transform 0.4s;
+    }
+    
+    .agent-student-label:hover {
+        -webkit-transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+        transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+    }
+    
+    .agent-student-checkbox:checked~.agent-student-label:hover {
+        -webkit-transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+        transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+    }
+    
+    .agent-student-checkbox {
+        display: none;
+    }
+    
+    .agent-student-checkbox:checked~.agent-student-label::before {
+        left: 30px;
+        background-color: #000000;
+        background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+    
+    .agent-student-label::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #000000;
+        background-image: linear-gradient(130deg,
+                #757272 10%,
+                #ffffff 11%,
+                #726f6f 62%);
+        left: 10px;
+        -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+    /* AGENT STUDENT CHECKBOX  */
+    
+    .sign-up-header {
+        font-size: 1.4rem;
+        color: #4B5FDC;
+        font-weight: 600;
+    }
+    
+    .sign-up-header-icon {
+        margin-right: .2rem;
+    }
+    
+    .sign-up-second-col {
+        padding-right: 5%;
+    }
+    
+    /* FORM START  */
+    input {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
+    input[type="checkbox"] {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .form-label,
+    .form-check-label,
+    .forgot-password,
+    .account {
+        font-size: .8rem;
+    }
+    
+    .check-boxes-div {
+        margin: 2% 0;
+    }
+    
+    .terms-link {
+        text-decoration: none;
+    }
+    
+    .forgot-password {
+        float: right;
+        text-decoration: none;
+    }
+    
+    .account-link {
+        text-decoration: none;
+    }
+    
+    .create-account-button,
+    .google-button {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .button-icons {
+        margin: .2rem .4rem;
+    }
+    
+    /* FORM END  */
+    /* SIGN UP SECOND COL END */
+}

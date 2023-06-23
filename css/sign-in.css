@@ -1,0 +1,131 @@
+body {
+    background-color: #ebeefd;
+    font-family: 'Poppins', sans-serif;
+    margin: 10% auto;
+}
+
+.sign-in-img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+/* FORM START  */
+form {
+    margin: auto;
+}
+
+input {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input[type="checkbox"] {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-label,
+.form-check-label,
+.forgot-password,
+.account {
+    font-size: .8rem;
+}
+
+.check-boxes-div {
+    margin: 5% 0 10%;
+}
+
+.terms-link {
+    text-decoration: none;
+}
+
+.forgot-password {
+    float: right;
+    text-decoration: none;
+}
+
+.account-link {
+    text-decoration: none;
+}
+
+.create-account-button,
+.google-button {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-icons {
+    margin: .2rem .4rem;
+}
+/* FORM END  */
+
+/* start of tablet styles */
+@media screen and (min-width: 767px) {
+    .sign-in-img {
+        width: 70%;
+        margin: 30% 20% 0;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+    
+/* start of pc styles */
+@media screen and (min-width: 991px) {
+    body {
+        margin: 5% 0 0 0;
+    }
+    
+    
+.sign-in-img {
+    width: 80%;
+    margin: 0 0 0 15%;
+}
+
+/* FORM START  */
+form {
+    padding-top: 10%;
+    width: 80%;
+    margin: auto;
+}
+
+input {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input[type="checkbox"] {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-label,
+.form-check-label,
+.forgot-password,
+.account {
+    font-size: .8rem;
+}
+
+.check-boxes-div {
+    margin: 5% 0 10%;
+}
+
+.terms-link {
+    text-decoration: none;
+}
+
+.forgot-password {
+    float: right;
+    text-decoration: none;
+}
+
+.account-link {
+    text-decoration: none;
+}
+
+.create-account-button,
+.google-button {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-icons {
+    margin: .2rem .4rem;
+}
+/* FORM END  */
+}

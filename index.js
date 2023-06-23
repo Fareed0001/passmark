@@ -147,5 +147,5 @@ if (window.matchMedia('(max-width: 600px)').matches)
 {
     $(".first-div-col0, .seventh-div-col0").addClass("order-2")
 }
-
 //MEDIA QUERY END 
+
