@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passmark | Dashboard</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images\logo\favicon.ico" type="image/x-icon">
+    <!-- FOTAWESOME -->
+    <script src="https://kit.fontawesome.com/a9a7c27c71.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css\dashboard.css">
+    <!-- GOOGLE FONTS  -->
+    <!-- DM Serif Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins&display=swap" rel="stylesheet">
+    <!-- popping -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-div">
+
+        <div class="row pc-header-sidebar">
+            <div class="col-sm-3">
+
+                <!-- ASIDE START  -->
+                <aside class="pc-sidebar">
+                    <div class="container">
+
+                        <!-- LOGO DIV START  -->
+                        <div class="logo-div">
+                            <p class="logo-text"><span class="logo-span">Pass</span>
+                                <i class="fa-solid fa-circle-check logo-icon"></i>
+                                <span class="logo-span">mark</span>
+                            </p>
+                        </div>
+                        <!-- LOGO DIV END  -->
+
+                        <!-- SIDE BAR COMPONENTS START -->
+                        <div class="sidebar-components">
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-qrcode"></i> Dashboard
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-chalkboard-user"></i>
+                                        My class</p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-person-chalkboard"></i>
+                                        Instructors
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i
+                                            class="fa-solid sidebar-icons fa-comment fa-flip-horizontal"></i>
+                                        Message</p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-user"></i> Profile</p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-gear"></i> Settings</p>
+                                </div>
+                            </a>
+
+                            <img class="sidebar-img" src="images\dashboard-images\sidebar-img.jpg" alt="">
+
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i
+                                            class="fa-solid sidebar-icons sidebar-icons fa-right-from-bracket"></i> Log
+                                        out</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- SIDE BAR COMPONENTS END -->
+                    </div>
+                </aside>
+                <!-- ASIDE END  -->
+            </div>
+
+            <div class="col-sm-9">
+                <!-- SECTION START  -->
+                <section>
+                    <!-- PC HEADER START -->
+                    <header class="pc-header">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+
+                                <!-- SEARCH BAR START -->
+                                <div class="p-1 bg-light header-search-div rounded rounded-pill mb-4">
+                                    <div class="input-group">
+                                        <input type="search" placeholder="Enter search"
+                                            aria-describedby="nav-search-button"
+                                            class="form-control rounded-pill nav-search-box border-0 bg-light">
+                                        <div class="input-group-append">
+                                            <button id="nav-search-button" type="submit"
+                                                class="btn btn-link text-primary"><i
+                                                    class="fa fa-search header-search-icon"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SEARCH BAR END -->
+
+                                <!-- HEADER NOTIFICATION ICONS START -->
+                                <div class="header-icons-div">
+                                    <i class="fa-regular fa-bell header-notification-icon"></i>
+                                    <i class="fa-solid fa-gear header-notification-icon"></i>
+                                </div>
+                                <!-- HEADER NOTIFICATION ICONS END -->
+
+                                <!-- USER IMAGE START -->
+                                <div class="header-user-div">
+                                    <div class="row">
+                                        <div class="col-auto header-user-text-col">
+                                            <p class="header-user-text"><span>Mohammed</span> <br> <span>Gadafi</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-auto header-user-img-col">
+                                            <img class="header-user-img" src="images\landing-page-images\face3.jpg"
+                                                alt="user-profile-pic">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- USER IMAGE END -->
+
+                            </div>
+                        </nav>
+                    </header>
+                    <!-- PC HEADER END -->
+
+
+                    <!-- PHONE HEADER START -->
+                    <header class="phone-header">
+
+                        <!-- PHONE START  -->
+
+                        <i class="fa-solid fa-bars fa-fade open-sidebar"></i>
+
+                        <!-- LOGO DIV START  -->
+                        <div class="logo-div">
+                            <p class="logo-text"><span class="logo-span">Pass</span>
+                                <i class="fa-solid fa-circle-check logo-icon"></i>
+                                <span class="logo-span">mark</span>
+                            </p>
+                        </div>
+                        <!-- LOGO DIV END  -->
+
+                        <div class="phone-user-header-div">
+                            <!-- PHONE NOTIFICATION ICONS START -->
+                            <div class="header-icons-div">
+                                <i class="fa-regular fa-bell header-notification-icon"></i>
+                                <i class="fa-solid fa-gear header-notification-icon"></i>
+                            </div>
+                            <!-- PHONE NOTIFICATION ICONS END -->
+
+                            <!-- USER IMAGE END  -->
+                            <img class="header-user-img" src="images\landing-page-images\face3.jpg"
+                                alt="user-profile-pic">
+                            <!-- USER IMAGE END  -->
+                        </div>
+
+                        <!-- SIDE BAR COMPONENTS START -->
+                        <div class="sidebar-components">
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-qrcode"></i> Dashboard
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-chalkboard-user"></i>
+                                        My class</p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-person-chalkboard"></i>
+                                        Instructors
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i
+                                            class="fa-solid sidebar-icons fa-comment fa-flip-horizontal"></i>
+                                        Message</p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-user"></i> Profile</p>
+                                </div>
+                            </a>
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-gear"></i> Settings</p>
+                                </div>
+                            </a>
+
+                            <img class="sidebar-img" src="images\dashboard-images\sidebar-img.jpg" alt="">
+
+                            <a class="sidebar-link-tag" href="">
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i
+                                            class="fa-solid sidebar-icons sidebar-icons fa-right-from-bracket"></i> Log
+                                        out</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- SIDE BAR COMPONENTS END -->
+                        <!-- PHONE END  -->
+                    </header>
+                    <!-- PHONE HEADER END -->
+                    <!-- HEADER END  -->
+
+
+                    <div class="container-fluid body-content">
+                        <p>Good morning Mohammed Gadafi</p>
+                        <div class="body-content-board">
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                </section>
+                <!-- SECTION END  -->
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src="index.js"></script>
+
+</html>

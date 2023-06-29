@@ -149,3 +149,25 @@ if (window.matchMedia('(max-width: 600px)').matches)
 }
 //MEDIA QUERY END 
 
+// DASHBOARD START 
+// PHONE SIDE BAR START
+$(".open-sidebar").on("click", function() {
+if ($(".open-sidebar").hasClass("fa-bars") == true) {
+    $(".sidebar-components").css({"width": "45%", "padding": "2% 6%"});
+    $(".open-sidebar").removeClass("fa-bars").addClass("fa-xmark");
+    $(".container-fluid.body-content").addClass("deemed-brightness");
+}
+else {
+    $(".sidebar-components").css({"width": "0", "padding": "0"});
+    $(".open-sidebar").removeClass("fa-xmark").addClass("fa-bars");
+    $(".container-fluid.body-content").removeClass("deemed-brightness");
+}
+});
+
+$(".container-fluid.body-content").click(function() {
+    $(".sidebar-components").css({"width": "0", "padding": "0"});
+    $(".open-sidebar").removeClass("fa-xmark").addClass("fa-bars");
+    $(".container-fluid.body-content").removeClass("deemed-brightness");
+});
+// PHONE SIDE BAR END
+// DASHBOARD END 

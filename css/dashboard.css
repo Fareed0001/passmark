@@ -1,0 +1,383 @@
+/* font-family: 'DM Serif Display', serif; */
+
+body {
+    background-color: #ebeefd;
+    font-family: 'Poppins', sans-serif;
+    margin: 5% auto;
+}
+
+:root {
+    --primary-color: #000D83;
+    --secondary-color: #4B5FDC;
+    --tertiary-color: #3EC4FF;
+    --quatenary-color: #F88081;
+}
+
+.dashboard-div {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 24px;
+    padding: 1% 5%;
+}
+
+/* PC STYLES */
+/* ASIDE START */
+.phone-header {
+    display: none;
+}
+
+.pc-sidebar {
+    padding: 5% 5% 5% 0;
+}
+
+/* LOGO DIV START  */
+.logo-div {
+    margin: 15% 0 0 5%;
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.logo-span {
+    color: var(--primary-color);
+}
+
+.logo-icon {
+    font-size: 1.6rem;
+    color: var(--tertiary-color);
+    vertical-align: middle;
+}
+
+/* LOGO DIV END */
+
+/* SIDE BAR COMPONENTS START */
+.sidebar-components {
+    margin: 20% 0 0;
+}
+
+.sidebar-link-tag {
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 1rem 1rem .01rem;
+    width: 8rem;
+    border-radius: 100px;
+    color: var(--secondary-color);
+}
+
+.nav-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.nav-link-text {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.sidebar-icons {
+    margin: 0 3% 0 0;
+}
+
+.sidebar-img {
+    width: 80%;
+    margin: 0 0 5%;
+}
+
+/* SIDE BAR COMPONENTS END */
+/* ASIDE END */
+
+
+/* HEADER START */
+/* SEARCH DIV START */
+.header-search-div.rounded {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 3% 0 0;
+}
+
+.nav-search-box.form-control {
+    color: var(--primary-color);
+    font-size: .8rem;
+    font-weight: 500;
+    width: auto;
+}
+
+.nav-search-box::placeholder {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.header-search-icon {
+    color: var(--primary-color);
+}
+
+/* SEARCH DIV END */
+
+/* HEADER ICON DIV START */
+.header-icons-div {
+    margin: 5% 0 4% 30%;
+    border-radius: 100px;
+}
+
+.header-notification-icon {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin: 0 .5rem;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* HEADER ICON DIV END */
+
+/* HEADER USER DIV START */
+.header-user-text {
+    text-align: right;
+    font-size: .8rem;
+    font-weight: 500;
+    margin: 15% 0 0 0;
+    color: var(--primary-color);
+}
+
+.header-user-img-col {
+    padding: 5% 0 0 0;
+}
+
+.header-user-img {
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+/* HEADER USER DIV END */
+/* HEADER END */
+
+
+
+
+
+
+/* start of pc styles */
+@media screen and (max-width: 991px) {
+    /* ie it ends at 991px */
+
+    /* ASIDE START */
+    .pc-sidebar {
+        padding: 5% 0;
+    }
+
+    /* LOGO DIV START  */
+    .logo-div {
+        margin: 25% 0 0 0;
+    }
+
+    .logo-icon {
+        font-size: 1.4rem;
+        color: var(--tertiary-color);
+        vertical-align: middle;
+    }
+
+    /* LOGO DIV END */
+
+    /* SIDE BAR COMPONENTS START */
+    .nav-item {
+        padding: 1rem .5rem .01rem;
+        width: 8rem;
+        border-radius: 100px;
+        color: var(--secondary-color);
+    }
+
+    /* SIDE BAR COMPONENTS END */
+    /* ASIDE END */
+
+
+    /* HEADER START */
+    /* SEARCH DIV START */
+    .header-search-div.rounded {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 5% 0 0;
+    }
+
+    .nav-search-box.form-control {
+        color: var(--primary-color);
+        font-size: .8rem;
+        font-weight: 500;
+        width: 6rem;
+    }
+
+    /* SEARCH DIV END */
+
+    /* HEADER ICON DIV START */
+    .header-icons-div {
+        margin: 1% 0 0;
+        border-radius: 100px;
+    }
+
+    /* HEADER ICON DIV END */
+
+}
+
+
+
+
+
+/* start of medium tablet styles */
+@media screen and (max-width: 767px) {
+    /* ie it ends at 767px */
+
+    /* ASIDE START */
+    /* LOGO DIV START  */
+    .logo-div {
+        margin: 35% 0 0 5%;
+        width: 6rem;
+    }
+
+    .logo-text {
+        font-size: .8rem;
+    }
+
+    .logo-icon {
+        font-size: 1.2rem;
+    }
+
+    /* LOGO DIV END */
+
+    /* SIDE BAR COMPONENTS START */
+    .nav-item {
+        padding: 1rem .4rem .01rem;
+        width: 7rem;
+    }
+
+    .sidebar-img {
+        width: 100%;
+    }
+
+    /* SIDE BAR COMPONENTS END */
+    /* ASIDE END */
+
+    /* HEADER START */
+    /* SEARCH DIV START */
+    .nav-search-box.form-control {
+        color: var(--primary-color);
+        font-size: .8rem;
+        font-weight: 500;
+        width: 5rem;
+    }
+
+    /* SEARCH DIV END */
+
+    /* HEADER ICON DIV START */
+    .header-icons-div {
+        margin: 0;
+        border-radius: 100px;
+    }
+
+    /* HEADER ICON DIV END */
+}
+
+
+
+
+
+
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+    /* ie it ends at 479px */
+
+
+    body {
+        margin: 0;
+    }
+
+    .dashboard-div {
+        width: 100%;
+    }
+
+    /* HEADER START */
+    .pc-sidebar,
+    .pc-header {
+        display: none;
+    }
+
+    .phone-header {
+        display: block;
+        padding: 5% 0;
+    }
+
+    /* LOGO DIV START  */
+    .open-sidebar {
+        color: var(--tertiary-color);
+        font-size: 1rem;
+        margin: 0 3% 0 0;
+    }
+
+    .logo-div {
+        margin: 2% 0 0;
+        display: inline-block;
+        width: auto;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .logo-span {
+        color: var(--primary-color);
+    }
+
+    .logo-icon {
+        font-size: 1.6rem;
+        color: var(--tertiary-color);
+        vertical-align: middle;
+    }
+
+    /* LOGO DIV END */
+    .header-icons-div {
+        text-align: center;
+        display: inline-block;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .header-user-img {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .phone-user-header-div {
+        float: right;
+    }
+
+    .sidebar-components {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        margin: 0 0 0 -5%;
+        overflow-x: hidden;
+        background-color: white;
+        transition: 0.5s;
+        border: none;
+    }
+
+    .nav-item {
+        padding: 1rem .4rem .01rem;
+        width: auto;
+    }
+
+    .sidebar-img {
+        width: 100%;
+    }
+
+    .deemed-brightness {
+        filter: brightness(40%);
+    }
+
+    /* HEADER END */
+
+}
