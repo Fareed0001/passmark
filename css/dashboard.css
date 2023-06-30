@@ -587,6 +587,7 @@ body {
 
     .dashboard-instructor-card {
         width: 60%;
+        height: 100%;
         margin: 5% auto;
     }
 
