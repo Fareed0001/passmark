@@ -643,6 +643,10 @@ body {
         padding: 0;
     }
 
+    .dashboard-instructor-img {
+        height: 8rem;
+    }
+
     .dashboard-instructor-text {
         margin: 8% 0 0;
     }
