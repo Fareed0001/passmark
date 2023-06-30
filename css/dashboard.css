@@ -478,7 +478,10 @@ body {
     }
 
     .dashboard-div {
+        background-color: white;
         width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 
     /* HEADER START */
@@ -489,7 +492,11 @@ body {
 
     .phone-header {
         display: block;
-        padding: 5% 0;
+        padding: 3% 0;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 1;
     }
 
     /* LOGO DIV START  */
@@ -534,6 +541,7 @@ body {
 
     .phone-user-header-div {
         float: right;
+        margin: 0 10% 0 0;
     }
 
     .sidebar-components {
@@ -557,14 +565,14 @@ body {
         width: 100%;
     }
 
-    .deemed-brightness {
-        filter: brightness(40%);
-    }
-
     /* HEADER END */
 
 
-    /* dashboard content div start */
+    /* dashboard content div start */  
+    .body-content {
+        padding: 15% 0 0;
+    }
+    
     .dashboard-content-board-img {
         width: 100%;
     }
@@ -575,6 +583,11 @@ body {
 
     .dashboard-activity-resources-div {
         margin: 5% 0;
+    }
+
+    .dashboard-instructor-card {
+        width: 60%;
+        margin: 5% auto;
     }
 
     /* dashboard content div end */

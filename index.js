@@ -160,14 +160,12 @@ if ($(".open-sidebar").hasClass("fa-bars") == true) {
 else {
     $(".sidebar-components").css({"width": "0", "padding": "0"});
     $(".open-sidebar").removeClass("fa-xmark").addClass("fa-bars");
-    $(".container-fluid.body-content").removeClass("deemed-brightness");
 }
 });
 
 $(".container-fluid.body-content").click(function() {
     $(".sidebar-components").css({"width": "0", "padding": "0"});
     $(".open-sidebar").removeClass("fa-xmark").addClass("fa-bars");
-    $(".container-fluid.body-content").removeClass("deemed-brightness");
 });
 // PHONE SIDE BAR END
 // DASHBOARD END 
