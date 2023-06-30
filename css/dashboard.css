@@ -158,8 +158,144 @@ body {
 /* HEADER END */
 
 
+/* DASHBOARD CONTENT START  */
+.dashboard-content-board-div {
+    text-align: center;
+}
+
+.dashboard-content-board-img {
+    width: 80%;
+}
+
+/* dashboard content div start  */
+/* dashboard content header start */
+.dashboard-content-header-div {
+    width: 90%;
+    margin: auto;
+}
+
+.dashboard-content-div {
+    margin: 5% 0;
+}
+
+.dashboard-content-header {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.dashboard-content-sub-header {
+    font-size: .8rem;
+    float: right;
+    margin: 1% 0 0;
+    color: var(--quatenary-color);
+}
+
+/* dashboard content header end */
 
 
+/* dashboard content card start */
+.dashboard-content-card {
+    margin: 5%;
+    border-radius: 6px;
+    padding: 4%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.dashboard-content-card:hover {
+    background-color: var(--tertiary-color);
+}
+
+.dashboard-content-img {
+    width: 100%;
+}
+
+.dashboard-content-text {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin: 4% 0 0;
+}
+
+/* dashboard content card end */
+/* dashboard content div end */
+
+/* dashboard activity start  */
+.dashboard-activity-img {
+    width: 60%;
+    margin: 0 0 0 10%;
+}
+
+.dashboard-activity-resources-div {
+    margin: 10% 0 0;
+}
+
+.dashboard-activity-courses,
+.dashboard-activity-videos {
+    text-align: center;
+    padding: 5%;
+    border-radius: 12px;
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.dashboard-activity-header {
+    margin: 10% 0 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.dashboard-activity-text {
+    font-size: .8rem;
+}
+
+/* dashboard activity end  */
+
+/* dashboard instructor card start */
+.dashboard-instructor-card-div {
+    margin: 5% 0 0;
+}
+
+.dashboard-instructor-card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    margin: 0 5% 8%;
+    cursor: pointer;
+}
+
+.dashboard-instructor-card:hover {
+    filter: brightness(80%);
+}
+
+.dashboard-instructor-img {
+    height: 100%;
+}
+
+.col-md-8.dashboard-instructor-text-col {
+    padding: 0 5% 2% 0;
+}
+
+.dashboard-instructor-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    margin: 5% 0 0;
+}
+
+.dashboard-instructor-sub-text {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.instructor-icon {
+    color: var(--secondary-color);
+    font-size: .7rem;
+}
+
+/* dashboard instructor card end */
+/* DASHBOARD CONTENT END */
 
 
 /* start of pc styles */
@@ -220,6 +356,19 @@ body {
 
     /* HEADER ICON DIV END */
 
+
+    /* dashboard content div start  */
+    .dashboard-content-header-div {
+        margin: 10% auto 0;
+    }
+
+    .dashboard-activity-header {
+        font-size: 1.2rem;
+    }
+
+    /* dashboard activity end  */
+
+    /* dashboard content div end */
 }
 
 
@@ -278,6 +427,40 @@ body {
     }
 
     /* HEADER ICON DIV END */
+
+    /* dashboard content div start */
+    .dashboard-content-img {
+        width: 80%;
+    }
+
+    .dashboard-content-header {
+        font-size: 1rem;
+    }
+
+    .dashboard-content-sub-header {
+        display: none;
+    }
+
+    .dashboard-activity-courses,
+    .dashboard-activity-videos {
+        width: 80%;
+        margin: 5% auto 0;
+        padding: .1%;
+    }
+
+    .dashboard-activity-header {
+        margin: 5% 0 0;
+    }
+
+    .dashboard-instructor-img {
+        border-radius: 6px;
+    }
+
+    .dashboard-instructor-text-col {
+        text-align: center;
+    }
+
+    /* dashboard content div end */
 }
 
 
@@ -380,4 +563,19 @@ body {
 
     /* HEADER END */
 
+
+    /* dashboard content div start */
+    .dashboard-content-board-img {
+        width: 100%;
+    }
+
+    .dashboard-content-sub-header {
+        display: block;
+    }
+
+    .dashboard-activity-resources-div {
+        margin: 5% 0;
+    }
+
+    /* dashboard content div end */
 }
