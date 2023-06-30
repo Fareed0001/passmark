@@ -497,6 +497,7 @@ body {
         background-color: white;
         width: 100%;
         z-index: 1;
+        top: 0;
     }
 
     /* LOGO DIV START  */
@@ -568,11 +569,17 @@ body {
     /* HEADER END */
 
 
-    /* dashboard content div start */  
+    /* dashboard content div start */
     .body-content {
-        padding: 15% 0 0;
+        padding: 25% 0 0;
     }
-    
+
+.dashboard-greetings {
+    font-size: .8rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
     .dashboard-content-board-img {
         width: 100%;
     }
@@ -581,13 +588,31 @@ body {
         display: block;
     }
 
+    .dashboard-content-card-div {
+        width: 80%;
+        margin: auto;
+    }
+
+    .dashboard-content-card {
+        padding: 5%;
+    }
+
+    .dashboard-activity-header-div {
+        text-align: center;
+    }
+
     .dashboard-activity-resources-div {
         margin: 5% 0;
     }
 
+    .dashboard-activity-img {
+        width: 50%;
+        margin: 0 25%;
+    }
+
     .dashboard-instructor-card {
-        width: 60%;
-        height: 60%;
+        width: 10rem;
+        height: 20rem;
         margin: 5% auto;
     }
 
