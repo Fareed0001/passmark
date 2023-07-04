@@ -156,85 +156,71 @@ body {
 /* HEADER END */
 
 
-/* CLASS CODES START  */
+/* COURSES CODES START  */
 .body-content {
     padding: 3% 0 0;
 }
 
-.class-nav-item {
+.course-nav-item {
     background-color: var(--primary-color);
     color: white;
-    text-align: center;
+    text-align: center;    
 }
 
-.class-video {
-    width: 100%;
-    height: auto;
+.courses-card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 6px;
 }
 
-.class-video-title {
-    font-size: 1rem;
-    color: var(--primary-color);
+.courses-card-img {
+    border-radius: 6px 6px 0 0;
 }
 
-.class-video-resources,
-.class-video-description {
+.courses-card-body {
+    padding: 5% 5% 0;
+}
+
+.courses-card-title {
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.course-price {
+    font-weight: 600;
+    padding: 0 5%;
+    font-size: .8rem;
+}
+
+.course-price-span {
+    float: right;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.courses-card-text {
     font-size: .8rem;
     text-align: justify;
+    padding: 0;
 }
 
-.class-next-video-text {
-    background-color: #ebeefd;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 6px;
-    margin: 0 0 10%;
-    padding: 8%;
-    cursor: pointer;
-    color: black;
+.courses-card-footer {
+    padding: 0 5% 5%;
+}
+
+.courses-details-text {
     font-size: .8rem;
-}
-
-.class-next-video-text:hover {
-    background-color: #d3d6e4;
-}
-
-.class-next-video-icon {
     color: var(--secondary-color);
-    margin: 0 5% 0 0;
-}
-
-.class-nav-video-list-div {
-    background-color: #ebeefd;
-    padding: 5%;
-}
-
-.class-video-list {
-    background-color: white;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 6px;
-    margin: 0 0 5%;
-    padding: 5%;
     cursor: pointer;
-    color: black;
-    font-size: .6rem;
 }
 
-.class-video-list-icon {
-    margin: 0 2% 0 0;
-}
-
-.class-course-content {
-    font-size: .6rem;
-}
-
-.class-up-down-icon {
-    color: var(--secondary-color);
-    float: right;
-    margin: 3% 3% 0 0;
-}
+/* PAYMENT START  */
 
 
-/* CLASS CODES END  */
+
+/* PAYMENT END */
+
+
+/* COURSES CODES END  */
 
 /* start of pc styles */
 @media screen and (max-width: 991px) {
@@ -363,7 +349,6 @@ body {
 
 /* start of phone styles */
 @media screen and (max-width: 479px) {
-
     /* ie it ends at 479px */
     body {
         margin: 0;
@@ -459,7 +444,11 @@ body {
     }
 
     /* HEADER END */
+
+
+
 }
+
 
 
 
@@ -473,24 +462,7 @@ body {
 @media screen and (max-width: 991px) {
     /* ie it ends at 991px */
 
-    /* CLASS CODES START  */
-    .class-video-title {
-        font-size: .9rem;
-    }
 
-    .class-video-resources,
-    .class-video-description {
-        font-size: .7rem;
-    }
-
-    .class-next-video-text {
-        padding: 5% 10%;
-        font-size: .6rem;
-    }
-
-    .class-next-video-text:hover {
-        background-color: #d3d6e4;
-    }
 }
 
 
@@ -499,28 +471,9 @@ body {
 @media screen and (max-width: 767px) {
     /* ie it ends at 767px */
 
-    .class-next-video-col {
-        margin: 5% 0 0;
-    }
-
-    .class-next-video-text {
-        margin: 0 0 3%;
-        padding: 3%;
-    }
-
-    .class-next-video-icon {
-        margin: 0 3% 0 0;
-    }
-
-    .class-up-down-icon {
-        color: var(--secondary-color);
-        float: right;
-        margin: 1% 3% 0 0;
-    }
-
-    .class-video-list {
-        margin: 0 0 3%;
-        padding: 2%;
+    .courses-card {
+        width: 80%;
+        margin: auto;
     }
 }
 
@@ -530,6 +483,11 @@ body {
     /* ie it ends at 479px */
 
     .body-content {
-        padding: 20% 0 10%;
+        padding: 25% 0 10%;
+    }
+
+    .courses-card {
+        width: 90%;
+        margin: auto;
     }
 }

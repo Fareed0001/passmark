@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Passmark | Dashboard Classes</title>
+    <title>Passmark | Dashboard Courses</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="images\logo\favicon.ico" type="image/x-icon">
     <!-- FOTAWESOME -->
@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS  -->
-    <link rel="stylesheet" href="css\dashboard-class.css">
+    <link rel="stylesheet" href="css\dashboard-course.css">
     <!-- GOOGLE FONTS  -->
     <!-- DM Serif Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="#">
+                            <a class="sidebar-link-tag" href="dashboard-class.html">
                                 <div class="nav-item class-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-chalkboard-user"></i>
                                         My class</p>
@@ -65,8 +65,8 @@
                                     </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="dashboard-courses.html">
-                                <div class="nav-item">
+                            <a class="sidebar-link-tag" href="#">
+                                <div class="nav-item course-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
                                 </div>
                             </a>
@@ -193,7 +193,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="#">
+                            <a class="sidebar-link-tag" href="dashboard-class.html">
                                 <div class="nav-item class-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-chalkboard-user"></i>
                                         My class</p>
@@ -206,8 +206,8 @@
                                     </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="dashboard-courses.html">
-                                <div class="nav-item">
+                            <a class="sidebar-link-tag" href="#">
+                                <div class="nav-item course-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
                                 </div>
                             </a>
@@ -247,97 +247,93 @@
 
 
                     <div class="container-fluid body-content">
-                        <div class="row">
 
-                            <div class="class-video-div col-md-9">
-                                <video class="class-video" controls controlsList="nodownload">
-                                    <source src="images\dashboard-images\video.mp4" type="video/mp4">
-                                </video>
-                                <p class="class-video-title">Introduction to the course</p>
-                                <p class="class-video-resources">Resources at:
-                                    http://127.0.0.1:50296/dashboard-class.html</p>
-                                <div class="class-video-description">Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                    ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                    to make a type specimen book. It has survived not only five centuries, but also the
-                                    leap into electronic typesetting, remaining essentially unchanged. It was
-                                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                                    passages, and more recently with desktop publishing software like Aldus PageMaker
-                                    including versions of Lorem Ipsum.
-
+                        <!-- COURSES START  -->
+                        <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="courses-card">
+                                    <img src="images\dashboard-images\sat.png" class="card-img-top courses-card-img"
+                                        alt="sat">
+                                    <div class="courses-card-body">
+                                        <p class="courses-card-title">SAT</p>
+                                        <p class="courses-card-text">This is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longerThis is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longerThis is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longerThis is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                    </div>
+                                    <p class="course-price">₦5,000 <span class="course-price-span">buy now</span></p>
+                                    <div class="courses-card-footer">
+                                        <small class="courses-details-text">Details</small>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-3 class-next-video-col">
-
-                                <div class="class-next-video" id="classNextVideo0">
-                                    <p class="class-next-video-text"><i
-                                            class="fa-regular fa-file-video class-next-video-icon"></i> Graphic design
-                                        <i class="fa-solid fa-caret-down class-up-down-icon"></i>
-                                    </p>
-                                    <div class="class-video-list-div" id="classList0">
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the coursetion to the coursetion to the coursetion to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
+                            <div class="col">
+                                <div class="courses-card">
+                                    <img src="images\dashboard-images\sat.png" class="card-img-top courses-card-img"
+                                        alt="sat">
+                                    <div class="courses-card-body">
+                                        <p class="courses-card-title">SAT</p>
+                                        <p class="courses-card-text">This is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                    </div>
+                                    <p class="course-price">₦5,000 <span class="course-price-span">buy now</span></p>
+                                    <div class="courses-card-footer">
+                                        <small class="courses-details-text">Details</small>
                                     </div>
                                 </div>
-
-
-                                <div class="class-next-video" id="classNextVideo1">
-                                    <p class="class-next-video-text"><i
-                                            class="fa-regular fa-file-video class-next-video-icon"></i> Graphic design
-                                        <i class="fa-solid fa-caret-down class-up-down-icon"></i>
-                                    </p>
-                                    <div class="class-video-list-div" id="classList1">
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the coursetion to the coursetion to the coursetion to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="courses-card">
+                                    <img src="images\dashboard-images\sat.png" class="card-img-top courses-card-img"
+                                        alt="sat">
+                                    <div class="courses-card-body">
+                                        <p class="courses-card-title">SAT</p>
+                                        <p class="courses-card-text">This is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                    </div>
+                                    <p class="course-price">₦5,000 <span class="course-price-span">buy now</span></p>
+                                    <div class="courses-card-footer">
+                                        <small class="courses-details-text">Details</small>
                                     </div>
                                 </div>
-
-
-                                <div class="class-next-video" id="classNextVideo2">
-                                    <p class="class-next-video-text"><i
-                                            class="fa-regular fa-file-video class-next-video-icon"></i> Graphic design
-                                        <i class="fa-solid fa-caret-down class-up-down-icon"></i>
-                                    </p>
-                                    <div class="class-video-list-div" id="classList2">
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the coursetion to the coursetion to the coursetion to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="courses-card">
+                                    <img src="images\dashboard-images\sat.png" class="card-img-top courses-card-img"
+                                        alt="sat">
+                                    <div class="courses-card-body">
+                                        <p class="courses-card-title">SAT</p>
+                                        <p class="courses-card-text">This is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                    </div>
+                                    <p class="course-price">₦5,000 <span class="course-price-span">buy now</span></p>
+                                    <div class="courses-card-footer">
+                                        <small class="courses-details-text">Details</small>
                                     </div>
                                 </div>
-
-
-                                <div class="class-next-video" id="classNextVideo3">
-                                    <p class="class-next-video-text"><i
-                                            class="fa-regular fa-file-video class-next-video-icon"></i> Graphic design
-                                        <i class="fa-solid fa-caret-down class-up-down-icon"></i>
-                                    </p>
-                                    <div class="class-video-list-div" id="classList3">
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the coursetion to the coursetion to the coursetion to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                        <p class="class-video-list"><i class="fa-solid fa-file-video class-video-list-icon"></i> <span class="class-video-list-text">Introduction to the course</span></p>
-                                    </div>
-                                </div>
-
-
-
-
-
-
-
                             </div>
 
                         </div>
+
+
+                        <!-- PAYMENT START  -->
+
+
+
+                        <!-- PAYMENT END  -->
+
+
+
+                        <!-- COURSES END  -->
+
                     </div>
 
                 </section>
@@ -355,4 +351,5 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 <script src="index.js"></script>
+
 </html>
