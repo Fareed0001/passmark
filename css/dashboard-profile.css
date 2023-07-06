@@ -167,15 +167,14 @@ body {
     text-align: center;
 }
 
-/* .profile-background-image {
-    width: 100%;
-    height: 20rem;
-
-} */
-
 .profile-background-image-div {
-    background-image: url("../dashboard-images/dashboard.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    background-image: url("images/dashboard-images/dashboard.jpg");
 }
+
 
 
 
@@ -316,6 +315,7 @@ body {
 
 /* start of phone styles */
 @media screen and (max-width: 479px) {
+
     /* ie it ends at 479px */
     body {
         margin: 0;

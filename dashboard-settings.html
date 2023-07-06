@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Passmark | Dashboard Courses</title>
-    <!-- FAVICON -->
+    <title>Passmark | Dashboard Settings</title>
     <link rel="shortcut icon" href="images\logo\favicon.ico" type="image/x-icon">
     <!-- FOTAWESOME -->
     <script src="https://kit.fontawesome.com/a9a7c27c71.js" crossorigin="anonymous"></script>
@@ -13,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS  -->
-    <link rel="stylesheet" href="css\dashboard-course.css">
+    <link rel="stylesheet" href="css\dashboard-settings.css">
     <!-- GOOGLE FONTS  -->
     <!-- DM Serif Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+]
 
 <body>
     <div class="dashboard-div">
@@ -65,7 +65,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="#">
+                            <a class="sidebar-link-tag" href="dashboard-courses.html">
                                 <div class="nav-item course-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
                                 </div>
@@ -78,12 +78,12 @@
                                 </div>
                             </a>
                             <a class="sidebar-link-tag" href="dashboard-profile.html">
-                                <div class="nav-item">
+                                <div class="nav-item  profile-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-user"></i> Profile</p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="dashboard-settings.html">
-                                <div class="nav-item">
+                            <a class="sidebar-link-tag" href="#">
+                                <div class="nav-item settings-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-gear"></i> Settings</p>
                                 </div>
                             </a>
@@ -206,7 +206,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="#">
+                            <a class="sidebar-link-tag" href="dashboard-courses.html">
                                 <div class="nav-item course-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
                                 </div>
@@ -219,12 +219,13 @@
                                 </div>
                             </a>
                             <a class="sidebar-link-tag" href="dashboard-profile.html">
-                                <div class="nav-item">
-                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-user"></i> Profile</p>
+                                <div class="nav-item profile-nav-item">
+                                    <p class=" nav-link-text"><i class="fa-solid sidebar-icons fa-user"></i> Profile
+                                    </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="dashboard-settings.html">
-                                <div class="nav-item">
+                            <a class="sidebar-link-tag" href="#">
+                                <div class="nav-item settings-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-gear"></i> Settings</p>
                                 </div>
                             </a>
@@ -247,93 +248,49 @@
 
 
                     <div class="container-fluid body-content">
+                        <!-- CONTENT START  -->
 
-                        <!-- COURSES START  -->
-                        <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
-                            <div class="col">
-                                <div class="courses-card">
-                                    <img src="images\dashboard-images\sat.png" class="card-img-top courses-card-img"
-                                        alt="sat">
-                                    <div class="courses-card-body">
-                                        <p class="courses-card-title">SAT</p>
-                                        <p class="courses-card-text">This is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This content is a little bit
-                                            longerThis is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This content is a little bit
-                                            longerThis is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This content is a little bit
-                                            longerThis is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
-                                    <p class="course-price">₦5,000 <span class="course-price-span">buy now</span></p>
-                                    <div class="courses-card-footer">
-                                        <small class="courses-details-text">Details</small>
-                                    </div>
-                                </div>
+                        <div class="settings-div">
+                            <div class="settings-heading-div">
+                                <p class="settings-header">Account settings</p>
+                                <p class="settings-sub-header">Edit your account settings and change your password here
+                                </p>
                             </div>
-                            <div class="col">
-                                <div class="courses-card">
-                                    <img src="images\dashboard-images\sat.png" class="card-img-top courses-card-img"
-                                        alt="sat">
-                                    <div class="courses-card-body">
-                                        <p class="courses-card-title">SAT</p>
-                                        <p class="courses-card-text">This is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
-                                    <p class="course-price">₦5,000 <span class="course-price-span">buy now</span></p>
-                                    <div class="courses-card-footer">
-                                        <small class="courses-details-text">Details</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="courses-card">
-                                    <img src="images\dashboard-images\sat.png" class="card-img-top courses-card-img"
-                                        alt="sat">
-                                    <div class="courses-card-body">
-                                        <p class="courses-card-title">SAT</p>
-                                        <p class="courses-card-text">This is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
-                                    <p class="course-price">₦5,000 <span class="course-price-span">buy now</span></p>
-                                    <div class="courses-card-footer">
-                                        <small class="courses-details-text">Details</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="courses-card">
-                                    <img src="images\dashboard-images\sat.png" class="card-img-top courses-card-img"
-                                        alt="sat">
-                                    <div class="courses-card-body">
-                                        <p class="courses-card-title">SAT</p>
-                                        <p class="courses-card-text">This is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
-                                    <p class="course-price">₦5,000 <span class="course-price-span">buy now</span></p>
-                                    <div class="courses-card-footer">
-                                        <small class="courses-details-text">Details</small>
-                                    </div>
-                                </div>
+                            <div class="settings-email-div">
+                                <label for="settingsEmail1" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="settingsEmail0"
+                                    placeholder="oldmail@example.com" disabled>
+                                <input type="email" class="form-control" id="settingsEmail1"
+                                    placeholder="enter new email">
+                                <button type="submit" class="btn btn-dark settings-button">Save</button>
+
                             </div>
 
+                            <div class="settings-password-div">
+                                <label for="settingsPassword0" class="form-label">Password:</label>
+                                <input type="password" id="settingsPassword0" class="form-control"
+                                    placeholder="enter current password">
+                                <input type="password" id="settingsPassword1" class="form-control"
+                                    placeholder="new password">
+                                <input type="password" id="settingsPassword2" class="form-control"
+                                    placeholder="re-type new password">
+                                <button type="submit" class="btn btn-dark settings-button">Change password</button>
+                            </div>
+
+                            <div class="settings-delete-div">
+                                <p class="delete-account-header">Close account</p>
+                                <p class="delete-account-sub-header"><span  class="delete-account-span">Warning:</span> If you close your account, you will be unsubscribed from all your courses, and will lose access forever.</p>
+                                <button type="submit" class="btn btn-dark settings-button">Delete account <i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </div>
                         </div>
 
 
-                        <!-- PAYMENT START  -->
 
 
 
-                        <!-- PAYMENT END  -->
 
-
-
-                        <!-- COURSES END  -->
-
+                        <!-- CONTENT END  -->
                     </div>
 
                 </section>
