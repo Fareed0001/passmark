@@ -191,30 +191,14 @@ $(".courses-card-text").slideUp();
 $(".courses-details-text").on("click", function () {
     $(this).closest(".courses-card").find(".courses-card-text").slideToggle();
 });
-
-
-
-
-
-
-
-
-
-
-//     if ($(".courses-details-text").text() === "DetailsDetailsDetails") {
-//         $(".courses-details-text").text("Less details");
-//     }
-//     else {
-//         $(".courses-details-text").text("Details");
-//     }
-
-
-
-
-
-
-
-
-
-
 //COURSES END 
+
+
+
+//SETTINGS START
+
+$(".settings-delete-button").on("click", function () {
+    confirm("Are you sure you want to permanently delete your account?");
+});
+
+//SETTINGS END
