@@ -142,12 +142,6 @@ $(function () {
 });
 // CAROUSEL END 
 
-// MEDIA QUERY START
-if (window.matchMedia('(max-width: 600px)').matches) {
-    $(".first-div-col0, .seventh-div-col0").addClass("order-2")
-}
-//MEDIA QUERY END 
-
 // DASHBOARD START 
 // PHONE SIDE BAR START
 $(".open-sidebar").on("click", function () {
@@ -202,3 +196,48 @@ $(".settings-delete-button").on("click", function () {
 });
 
 //SETTINGS END
+
+
+//INSTRUCTOR START 
+$(".instructor-video-list-div").slideUp();
+$(".instructor-view-classes").on("click", function () {
+    $(this).closest(".instructor-card").find(".instructor-video-list-div").slideToggle();
+});
+
+$(".instructor-video-list").each(function () {
+    if ($(this).text().length > 30) {
+        $(this).text($(this).text().substr(0, 30) + "...");
+    }
+});
+//INSTRUCTOR END 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERY START
+if (window.matchMedia('(max-width: 600px)').matches) {
+    $(".first-div-col0, .seventh-div-col0").addClass("order-2");
+
+
+
+
+//INSTRUCTOR START 
+$(".instructor-video-list").each(function () {
+    if ($(this).text().length > 0) {
+        $(this).text($(this).text().substr(0, 50) + "...");
+    }
+});
+
+//INSTRUCTOR END 
+}
+//MEDIA QUERY END 

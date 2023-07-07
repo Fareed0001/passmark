@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Passmark | Dashboard Settings</title>
+    <title>Passmark | Dashboard Instructors</title>
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="images\logo\favicon.ico" type="image/x-icon">
     <!-- FOTAWESOME -->
     <script src="https://kit.fontawesome.com/a9a7c27c71.js" crossorigin="anonymous"></script>
@@ -12,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS  -->
-    <link rel="stylesheet" href="css\dashboard-settings.css">
+    <link rel="stylesheet" href="css\dashboard-instructor.css">
     <!-- GOOGLE FONTS  -->
     <!-- DM Serif Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,15 +58,15 @@
                                         My class</p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="dashboard-instructor.html">
-                                <div class="nav-item">
+                            <a class="sidebar-link-tag" href="#">
+                                <div class="nav-item instructor-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-person-chalkboard"></i>
                                         Instructors
                                     </p>
                                 </div>
                             </a>
                             <a class="sidebar-link-tag" href="dashboard-courses.html">
-                                <div class="nav-item course-nav-item">
+                                <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
                                 </div>
                             </a>
@@ -77,12 +78,12 @@
                                 </div>
                             </a>
                             <a class="sidebar-link-tag" href="dashboard-profile.html">
-                                <div class="nav-item  profile-nav-item">
+                                <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-user"></i> Profile</p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="#">
-                                <div class="nav-item settings-nav-item">
+                            <a class="sidebar-link-tag" href="dashboard-settings.html">
+                                <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-gear"></i> Settings</p>
                                 </div>
                             </a>
@@ -198,15 +199,15 @@
                                         My class</p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="">
-                                <div class="nav-item">
-                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-person-chalkboard"></i>
+                            <a class="sidebar-link-tag" href="#">
+                                <div class="nav-item instructor-nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-rotate"></i>
                                         Instructors
                                     </p>
                                 </div>
                             </a>
                             <a class="sidebar-link-tag" href="dashboard-courses.html">
-                                <div class="nav-item course-nav-item">
+                                <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
                                 </div>
                             </a>
@@ -218,13 +219,12 @@
                                 </div>
                             </a>
                             <a class="sidebar-link-tag" href="dashboard-profile.html">
-                                <div class="nav-item profile-nav-item">
-                                    <p class=" nav-link-text"><i class="fa-solid sidebar-icons fa-user"></i> Profile
-                                    </p>
+                                <div class="nav-item">
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-user"></i> Profile</p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="#">
-                                <div class="nav-item settings-nav-item">
+                            <a class="sidebar-link-tag" href="dashboard-settings.html">
+                                <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-gear"></i> Settings</p>
                                 </div>
                             </a>
@@ -245,43 +245,94 @@
                     <!-- PHONE HEADER END -->
                     <!-- HEADER END  -->
 
-
                     <div class="container-fluid body-content">
-                        <!-- CONTENT START  -->
+                        <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="instructor-card">
+                                    <img src="images\landing-page-images\business-instructure.jpg"
+                                        class="card-img-top instructor-card-img" alt="instructor">
+                                    <div class="instructor-card-body">
+                                        <p class="instructor-name">Aaron Abraham</p>
+                                        <p class="instructor-course-title">Business and marketing</p>
+                                    </div>
+                                    <div class="instructor-video-list-div" id="instructorClassList0">
+                                        <p class="instructor-video-list">Introduction to the coction to the coction to the coction to the coction to the coction to the coction to the course the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                    </div>
 
-                        <div class="settings-div">
-                            <div class="settings-heading-div">
-                                <p class="settings-header">Account settings</p>
-                                <p class="settings-sub-header">Edit your account settings and change your password here
-                                </p>
+                                    <div class="instructor-card-footer">
+                                        <small class="instructor-view-classes">View classes</small>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="settings-email-div">
-                                <label for="settingsEmail1" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="settingsEmail0"
-                                    placeholder="oldmail@example.com" disabled>
-                                <input type="email" class="form-control" id="settingsEmail1"
-                                    placeholder="enter new email">
-                                <button type="submit" class="btn btn-dark settings-button">Save</button>
+                            <div class="col">
+                                <div class="instructor-card">
+                                    <img src="images\landing-page-images\design-instructor.jpg"
+                                        class="card-img-top instructor-card-img" alt="instructor">
+                                    <div class="instructor-card-body">
+                                        <p class="instructor-name">Kafayat Asus</p>
+                                        <p class="instructor-course-title">Complete design course 2023</p>
+                                    </div>
+                                    <div class="instructor-video-list-div" id="instructorClassList1">
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                    </div>
+                                    <div class="instructor-card-footer">
+                                        <small class="instructor-view-classes">View classes</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="instructor-card">
+                                    <img src="images\landing-page-images\developer-instructor.jpg"
+                                        class="card-img-top instructor-card-img" alt="instructor">
+                                    <div class="instructor-card-body">
+                                        <p class="instructor-name">Fareed Sylvester</p>
+                                        <p class="instructor-course-title">Web development bootcamp</p>
+                                    </div>
+                                    <div class="instructor-video-list-div" id="instructorClassList2">
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                    </div>
+                                    <div class="instructor-card-footer">
+                                        <small class="instructor-view-classes">View classes</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="instructor-card">
+                                    <img src="images\landing-page-images\writing-instructor.jpg"
+                                        class="card-img-top instructor-card-img" alt="instructor">
+                                    <div class="instructor-card-body">
+                                        <p class="instructor-name">Isiah Vincent</p>
+                                        <p class="instructor-course-title">Professional writing</p>
+                                    </div>
+                                    <div class="instructor-video-list-div" id="instructorClassList3">
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                        <p class="instructor-video-list">Introduction to the course</p>
+                                    </div>
+                                    <div class="instructor-card-footer">
+                                        <small class="instructor-view-classes">View classes</small>
+                                    </div>
+                                </div>
+                            </div>
 
-                            </div>
-
-                            <div class="settings-password-div">
-                                <label for="settingsPassword0" class="form-label">Password:</label>
-                                <input type="password" id="settingsPassword0" class="form-control"
-                                    placeholder="enter current password">
-                                <input type="password" id="settingsPassword1" class="form-control"
-                                    placeholder="new password">
-                                <input type="password" id="settingsPassword2" class="form-control"
-                                    placeholder="re-type new password">
-                                <button type="submit" class="btn btn-dark settings-button">Change password</button>
-                            </div>
-
-                            <div class="settings-delete-div">
-                                <p class="delete-account-header">Close account</p>
-                                <p class="delete-account-sub-header"><span  class="delete-account-span">Warning:</span> If you close your account, you will be unsubscribed from all your courses, and will lose access forever.</p>
-                                <button type="submit" class="btn btn-dark settings-button settings-delete-button">Delete account <i
-                                        class="fa-solid fa-trash-can"></i></button>
-                            </div>
                         </div>
 
 
@@ -289,8 +340,24 @@
 
 
 
-                        <!-- CONTENT END  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
+
 
                 </section>
                 <!-- SECTION END  -->

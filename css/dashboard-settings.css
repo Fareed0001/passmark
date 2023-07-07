@@ -158,7 +158,7 @@ body {
 
 /* SETTINGS CODES START  */
 .body-content {
-    padding: 3% 0 0;
+    padding: 3% 0 3%;
 }
 
 .settings-nav-item {
@@ -508,6 +508,10 @@ body {
 
     .body-content {
         padding: 25% 5%;
+    }
+
+    .settings-header {
+        font-size: 1rem;
     }
 
     .form-control {
