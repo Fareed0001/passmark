@@ -232,11 +232,11 @@ if (window.matchMedia('(max-width: 600px)').matches) {
 
 
 //INSTRUCTOR START 
-$(".instructor-video-list").each(function () {
-    if ($(this).text().length > 0) {
-        $(this).text($(this).text().substr(0, 50) + "...");
-    }
-});
+// $(".instructor-video-list").each(function () {
+//     if ($(this).text().length > 0) {
+//         $(this).text($(this).text().substr(0, 50) + "...");
+//     }
+// });
 
 //INSTRUCTOR END 
 }

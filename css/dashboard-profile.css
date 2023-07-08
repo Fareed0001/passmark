@@ -167,22 +167,71 @@ body {
     text-align: center;
 }
 
-.profile-background-image-div {
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    background-image: url("images/dashboard-images/dashboard.jpg");
+.user-profile-image-div {
+    text-align: center;
 }
 
+.user-profile-image {
+    width: 10rem;
+    border-radius: 50%;
+}
 
+.user-camera-icon-label {
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    padding: .5% 1%;
+    position: relative;
+    top: 60px;
+    right: 45px;
+    cursor: pointer;
+}
 
+.profilePicInput {
+    display: none;
+}
 
+.user-details-div {
+    margin: 5% 3% 0 0;
+    text-align: center;
+}
 
+.user-role {
+    color: grey;
+    line-height: 1rem;
+}
 
+.user-email-link,
+.user-phone-number-link {
+    margin: 0 0 0 .5%;
+}
 
+.user-email-link,
+.user-phone-number-link {
+    color: var(--secondary-color);
+}
 
+.user-courses-div {
+    margin: 10% 0 0 0;
+}
 
+.user-courses-header {
+    font-size: 1.1rem;
+}
+
+.user-courses {
+    margin: 2% 0 0 0;
+}
+
+.courses-card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.courses-card-title {
+    font-size: .8rem;
+    padding: 2% 5%;
+}
 
 /* PROFILE CODES END  */
 
@@ -245,8 +294,6 @@ body {
     }
 
     /* HEADER ICON DIV END */
-
-
 }
 
 
@@ -305,7 +352,6 @@ body {
     }
 
     /* HEADER ICON DIV END */
-
 }
 
 
@@ -411,7 +457,42 @@ body {
     }
 
     /* HEADER END */
+}
 
 
 
+/* MEDIA QUERY STARTS */
+
+/* start of medium tablet styles */
+@media screen and (max-width: 767px) {
+    /* ie it ends at 767px */
+
+    .user-courses-div {
+        width: 90%;
+        margin: 20% auto 0;
+        text-align: center;
+    }
+
+    .user-courses-header {
+        font-size: 1rem;
+    }
+
+    .user-courses {
+        margin: 5% 0 0 0;
+    }
+}
+
+
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+
+    /* ie it ends at 479px */
+
+    .body-content {
+        padding: 25% 0;
+    }
+
+    .user-courses-div {
+        width: 100%;
+    }
 }
