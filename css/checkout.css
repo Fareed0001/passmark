@@ -1,0 +1,202 @@
+body {
+    background-color: #ebeefd;
+    font-family: 'Poppins', sans-serif;
+    margin: 2% auto;
+}
+
+:root {
+    --primary-color: #000D83;
+    --secondary-color: #4B5FDC;
+    --tertiary-color: #3EC4FF;
+    --quatenary-color: #F88081;
+}
+
+.dashboard-div {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    border-radius: 24px;
+    padding: 2%;
+}
+
+.checkout-div {
+    margin: 3% 0;
+}
+
+.checkout-side-image {
+    width: 90%;
+    margin: 30% 0 0;
+}
+
+.checkout-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-col {
+    margin: 3% 0 0 0;
+}
+
+.form-label {
+    font-size: .8rem;
+    color: rgb(66, 65, 65);
+}
+
+input {
+    padding: 0.275rem 0.5rem;
+}
+
+.form-input-field {
+    color: black;
+}
+
+.form-input-field,
+.form-input-field::placeholder {
+    font-size: .8rem;
+}
+
+.card-name-input {
+    width: 80%;
+}
+
+.card-number-input {
+    width: 82%;
+}
+
+.input-group-text {
+    padding: 3px 6px;
+}
+
+.card-animation {
+    width: 2rem;
+}
+
+.card-expiring-date-input {
+    width: 70%;
+}
+
+.card-cvv-input {
+    width: 40%;
+}
+
+.form-check {
+    padding: 2% 0 0 11%;
+}
+
+.form-check-label {
+    color: grey;
+}
+
+.payment-summary-input {
+    width: 80%;
+}
+
+.form-btn {
+    font-size: .8rem;
+    width: 80%;
+}
+
+
+/* CHECKOUT MEDIA QUERY START */
+
+/* start of pc styles */
+@media screen and (max-width: 991px) {
+    /* ie it ends at 991px */
+
+    .dashboard-div {
+        width: 80%;
+        padding: 2%;
+    }
+
+    .checkout-first-col {
+        text-align: center;
+    }
+
+    .checkout-side-image {
+        width: 30%;
+        margin: auto;
+    }
+
+    .checkout-bank-details {
+        margin: 5% 0 0 0;
+    }
+
+    .checkout-header {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .checkout-input-div {
+        width: 60%;
+        margin: auto;
+    }
+
+    .form-col {
+        margin: 3% 0 0 0;
+    }
+
+    .card-name-input {
+        width: 100%;
+    }
+
+    .card-number-input {
+        width: 100%;
+    }
+
+    .input-group-text {
+        padding: 3px 6px;
+    }
+
+    .card-animation {
+        width: 2rem;
+    }
+
+    .card-expiring-date-input {
+        width: 60%;
+    }
+
+    .card-cvv-input {
+        width: 35%;
+    }
+
+    .payment-summary-input {
+        width: 100%;
+    }
+
+    .form-btn {
+        width: 100%;
+    }
+
+}
+
+/* start of medium tablet styles */
+/* @media screen and (max-width: 767px) {
+    
+} */
+
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+
+    /* ie it ends at 479px */
+    body {
+        margin: 0;
+        background-color: white;
+    }
+
+    .dashboard-div {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .checkout-header {
+        font-size: 1.2rem;
+    }
+
+    .checkout-input-div {
+        width: 80%;
+    }
+}
+
+/* CHECKOUT MEDIA QUERY END  */

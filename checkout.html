@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passmark | Checkout</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images\logo\favicon.ico" type="image/x-icon">
+    <!-- FOTAWESOME -->
+    <script src="https://kit.fontawesome.com/a9a7c27c71.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css\checkout.css">
+    <!-- GOOGLE FONTS  -->
+    <!-- DM Serif Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins&display=swap" rel="stylesheet">
+    <!-- popping -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard-div">
+        <div class="checkout-div">
+
+            <div class="row">
+                <div class="col-lg-6 checkout-first-col">
+                    <img class="checkout-side-image" src="images\register-images\checkout0.jpg" alt="checkout image">
+                </div>
+                <div class="col-lg-6 checkout-bank-details">
+                    <div class="checkout-header-div">
+                        <p class="checkout-header">Checkout</p>
+                    </div>
+                    <div class="checkout-input-div">
+
+                        <form class="row needs-validation" novalidate>
+
+                            <div class="col-12 form-col">
+                                <label for="cardOwnerName" class="form-label">Name on card</label>
+                                <input type="text" class="form-control form-input-field card-name-input"
+                                    id="cardOwnerName" placeholder="Cardholder's name" required>
+                            </div>
+                            <div class="col-12 form-col">
+                                <label for="cardNumber" class="form-label">card number</label>
+                            </div>
+                            <div class="input-group has-validation  card-number-input">
+                                <input type="text" class="form-control form-input-field" id="cardNumber"
+                                    aria-describedby="inputGroupPrepend" placeholder="0000 0000 0000 0000"
+                                    maxlength="16" required>
+                                <span class="input-group-text" id="inputGroupPrepend"><img class="card-animation"
+                                        src="images\register-images\credit-card-animation.gif"
+                                        alt="credit card animation"></span>
+                            </div>
+                            <div class="col-6 col-lg-6 form-col">
+                                <label for="expiringDate" class="form-label">Expiring date</label>
+                                <input type="text" class="form-control form-input-field  card-expiring-date-input"
+                                    id="expiringDate" placeholder="MM/YYYY" required>
+                            </div>
+                            <div class="col-6 col-lg-6 form-col">
+                                <label for="cvvCode" class="form-label">CVV/CVC</label>
+                                <input type="text" class="form-control form-input-field  card-cvv-input" id="cvvCode"
+                                    placeholder="000" maxlength="3" required>
+                            </div>
+                            <div class="col-12 form-col form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label form-label" for="flexCheckDefault">
+                                    Remember this card for later
+                                </label>
+                            </div>
+                            <div class="col-12 form-col">
+                                <label for="paymentSummary" class="form-label">SAT</label>
+                                <input type="text" class="form-control form-input-field payment-summary-input"
+                                    id="paymentSummary" placeholder="Total payment: ₦5,000" readonly>
+                            </div>
+                            <div class="col-12 form-col d-grid">
+                                <button type="submit" class="btn btn-primary btn-large form-btn">Buy Course</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+<script>
+    $("#expiringDate").on("input", function () {
+        var value = $(this).val().trim();
+        if (value.length === 2 && value.indexOf('/') === -1) {
+            $(this).val(value + '/');
+        }
+        if (value.length > 7) {
+            $(this).val(value.slice(0, 7));
+        }
+    });
+</script>
+
+</html>
