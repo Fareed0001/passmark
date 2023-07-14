@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passmark | Admin dashboard</title>
+    <title>Passmark | Add course</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="images\logo\favicon.ico" type="image/x-icon">
     <!-- FOTAWESOME -->
@@ -12,15 +12,57 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-   <!-- CSS  -->
+    <!-- CSS  -->
     <link rel="stylesheet" href="css\admin-add-course.css">
 </head>
 
 <body>
     <div class="container body-content">
-        
-    </div>
 
+        <p class="header-text">Add a new course</p>
+        <form action="">
+            <div class="row container">
+                <div class="input-field-div col-12 col-lg-6">
+                    <label for="coverImage" class="form-label">Select course cover image</label>
+                    <input class="form-control" type="file" id="coverImage" accept="image/*">
+                </div>
+
+                <div class="input-field-div col-12 col-lg-6">
+                    <label for="courseTitle" class="form-label">Course title</label>
+                    <input type="text" class="form-control" placeholder="Enter course title" id="courseTitle">
+                </div>
+
+                <div class="input-field-div col-lg-12">
+                    <label for="courseDescription" class="form-label">Course description</label>
+                    <textarea class="form-control text-area" placeholder="Enter the course description"
+                        id="courseDescription"></textarea>
+                </div>
+
+                <div class="input-field-div col-12 col-lg-6">
+                    <label for="studentPrice" class="form-label">Student price</label>
+                    <div class="input-group">
+                        <span class="input-group-text">₦</span>
+                        <input id="studentPrice" type="number" class="form-control"
+                            aria-label="Amount (to the nearest naira)">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+
+                <div class="input-field-div col-12 col-lg-6">
+                    <label for="agentPrice" class="form-label">Agent price</label>
+                    <div class="input-group">
+                        <span class="input-group-text">₦</span>
+                        <input id="agentPrice" type="number" class="form-control"
+                            aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">.00</span>
+                    </div>
+
+                </div>
+            </div>
+            <button class="btn btn-primary add-new-course-button" type="submit">Add new course</button>
+        </form>
+
+    </div>
 </body>
 
 </html>
