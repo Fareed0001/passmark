@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS  -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css\dashboard.css">
     <!-- GOOGLE FONTS  -->
     <!-- DM Serif Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,27 +46,27 @@
 
                         <!-- SIDE BAR COMPONENTS START -->
                         <div class="sidebar-components">
-                            <a class="sidebar-link-tag" href="dashboard.html">
+                            <a class="sidebar-link-tag" href="agent-dashboard.html">
                                 <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-qrcode"></i> Dashboard
                                     </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="#">
-                                <div class="nav-item class-nav-item">
+                            <a class="sidebar-link-tag" href="dashboard-class.html">
+                                <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-chalkboard-user"></i>
                                         My class</p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="dashboard-translate.html">
+                            <a class="sidebar-link-tag" href="dashboard-instructor.html">
                                 <div class="nav-item">
-                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-rotate"></i>
-                                        Translate
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-person-chalkboard"></i>
+                                        Instructors
                                     </p>
                                 </div>
                             </a>
                             <a class="sidebar-link-tag" href="dashboard-courses.html">
-                                <div class="nav-item">
+                                <div class="nav-item course-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
                                 </div>
                             </a>
@@ -115,7 +115,7 @@
                                 <!-- SEARCH BAR START -->
                                 <div class="p-1 bg-light header-search-div rounded rounded-pill mb-4">
                                     <div class="input-group">
-                                        <input type="search" id="header-search-input" placeholder="Enter search"
+                                        <input type="search" placeholder="Enter search"
                                             aria-describedby="nav-search-button"
                                             class="form-control rounded-pill nav-search-box border-0 bg-light">
                                         <div class="input-group-append">
@@ -187,27 +187,27 @@
 
                         <!-- SIDE BAR COMPONENTS START -->
                         <div class="sidebar-components">
-                            <a class="sidebar-link-tag" href="dashboard.html">
+                            <a class="sidebar-link-tag" href="agent-dashboard.html">
                                 <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-qrcode"></i> Dashboard
                                     </p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="#">
-                                <div class="nav-item class-nav-item">
+                            <a class="sidebar-link-tag" href="dashboard-class.html">
+                                <div class="nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-chalkboard-user"></i>
                                         My class</p>
                                 </div>
                             </a>
-                            <a class="sidebar-link-tag" href="dashboard-translate.html">
+                            <a class="sidebar-link-tag" href="dashboard-instructor.html">
                                 <div class="nav-item">
-                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-rotate"></i>
-                                        Translate
+                                    <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-person-chalkboard"></i>
+                                        Instructors
                                     </p>
                                 </div>
                             </a>
                             <a class="sidebar-link-tag" href="dashboard-courses.html">
-                                <div class="nav-item">
+                                <div class="nav-item course-nav-item">
                                     <p class="nav-link-text"><i class="fa-solid sidebar-icons fa-book"></i> Courses</p>
                                 </div>
                             </a>
@@ -246,6 +246,58 @@
                     <!-- HEADER END  -->
 
 
+                    <div class="container-fluid body-content">
+
+                        <!-- MY STUDENT START -->
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="agent-student-header">My students</p>
+                            </div>
+                            <div class="col-6">
+                                <a href="sign-up.html"><button type="button" class="btn btn-primary add-new-student-button">Add new student</button></a>
+                            </div>
+                        </div>
+                        
+                        <div class="agent-student-div">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                                <div class="col">
+                                    <div class="agent-student-card card">
+                                        <img class="student-image" src="images\landing-page-images\face0.jpg"
+                                            class="card-img-top" alt="student image">
+                                        <div class="card-body">
+                                            <p class="student-name">Isiah Sylvester</p>
+                                            <a href="dashboard.html" class="btn btn-primary agent-student-card-link">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="agent-student-card card">
+                                        <img class="student-image" src="images\landing-page-images\face0.jpg"
+                                            class="card-img-top" alt="student image">
+                                        <div class="card-body">
+                                            <p class="student-name">Isiah Sylvester</p>
+                                            <a href="dashboard.html" class="btn btn-primary agent-student-card-link">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="agent-student-card card">
+                                        <img class="student-image" src="images\landing-page-images\face0.jpg"
+                                            class="card-img-top" alt="student image">
+                                        <div class="card-body">
+                                            <p class="student-name">Isiah Sylvester</p>
+                                            <a href="dashboard.html" class="btn btn-primary agent-student-card-link">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- MY STUDENT END -->
+                    </div>
 
                 </section>
                 <!-- SECTION END  -->
@@ -256,412 +308,8 @@
 
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 <script src="index.js"></script>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-body {
-    background-color: #ebeefd;
-    font-family: 'Poppins', sans-serif;
-    margin: 5% auto;
-}
-
-:root {
-    --primary-color: #000D83;
-    --secondary-color: #4B5FDC;
-    --tertiary-color: #3EC4FF;
-    --quatenary-color: #F88081;
-}
-
-.dashboard-div {
-    background-color: white;
-    width: 90%;
-    margin: auto;
-    border-radius: 24px;
-    padding: 1% 5%;
-}
-
-/* PC STYLES */
-/* ASIDE START */
-.phone-header {
-    display: none;
-}
-
-.pc-sidebar {
-    padding: 5% 5% 5% 0;
-}
-
-/* LOGO DIV START  */
-.logo-div {
-    margin: 15% 0 0 5%;
-}
-
-.logo-text {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.logo-span {
-    color: var(--primary-color);
-}
-
-.logo-icon {
-    font-size: 1.6rem;
-    color: var(--tertiary-color);
-    vertical-align: middle;
-}
-
-/* LOGO DIV END */
-
-/* SIDE BAR COMPONENTS START */
-.sidebar-components {
-    margin: 20% 0 0;
-}
-
-.sidebar-link-tag {
-    text-decoration: none;
-}
-
-.nav-item {
-    padding: 1rem 1rem .01rem;
-    width: 8rem;
-    border-radius: 100px;
-    color: var(--secondary-color);
-}
-
-.nav-item:hover {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-}
-
-.nav-link-text {
-    font-size: .8rem;
-    font-weight: 600;
-}
-
-.sidebar-icons {
-    margin: 0 3% 0 0;
-}
-
-.sidebar-img {
-    width: 80%;
-    margin: 0 0 5%;
-}
-
-/* SIDE BAR COMPONENTS END */
-/* ASIDE END */
-
-
-/* HEADER START */
-/* SEARCH DIV START */
-.header-search-div.rounded {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 3% 0 0;
-}
-
-.nav-search-box.form-control {
-    color: var(--primary-color);
-    font-size: .8rem;
-    font-weight: 500;
-    width: auto;
-}
-
-.nav-search-box::placeholder {
-    font-size: 0.8rem;
-    color: #aaa;
-}
-
-.header-search-icon {
-    color: var(--primary-color);
-}
-
-/* SEARCH DIV END */
-
-/* HEADER ICON DIV START */
-.header-icons-div {
-    margin: 5% 0 4% 30%;
-    border-radius: 100px;
-}
-
-.header-notification-icon {
-    color: var(--primary-color);
-    font-size: 1rem;
-    margin: 0 .5rem;
-    border-radius: 100px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-/* HEADER ICON DIV END */
-
-/* HEADER USER DIV START */
-.header-user-text {
-    text-align: right;
-    font-size: .8rem;
-    font-weight: 500;
-    margin: 15% 0 0 0;
-    color: var(--primary-color);
-}
-
-.header-user-img-col {
-    padding: 5% 0 0 0;
-}
-
-.header-user-img {
-    border: none;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-}
-
-/* HEADER USER DIV END */
-/* HEADER END */
-
-
-
-
-/* start of pc styles */
-@media screen and (max-width: 991px) {
-    /* ie it ends at 991px */
-
-    /* ASIDE START */
-    .pc-sidebar {
-        padding: 5% 0;
-    }
-
-    /* LOGO DIV START  */
-    .logo-div {
-        margin: 25% 0 0 0;
-    }
-
-    .logo-icon {
-        font-size: 1.4rem;
-        color: var(--tertiary-color);
-        vertical-align: middle;
-    }
-
-    /* LOGO DIV END */
-
-    /* SIDE BAR COMPONENTS START */
-    .nav-item {
-        padding: 1rem .5rem .01rem;
-        width: 8rem;
-        border-radius: 100px;
-        color: var(--secondary-color);
-    }
-
-    /* SIDE BAR COMPONENTS END */
-    /* ASIDE END */
-
-
-    /* HEADER START */
-    /* SEARCH DIV START */
-    .header-search-div.rounded {
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin: 5% 0 0;
-    }
-
-    .nav-search-box.form-control {
-        color: var(--primary-color);
-        font-size: .8rem;
-        font-weight: 500;
-        width: 6rem;
-    }
-
-    /* SEARCH DIV END */
-
-    /* HEADER ICON DIV START */
-    .header-icons-div {
-        margin: 1% 0 0;
-        border-radius: 100px;
-    }
-
-    /* HEADER ICON DIV END */
-
-
-}
-
-
-
-
-
-/* start of medium tablet styles */
-@media screen and (max-width: 767px) {
-    /* ie it ends at 767px */
-
-    /* ASIDE START */
-    /* LOGO DIV START  */
-    .logo-div {
-        margin: 35% 0 0 5%;
-        width: 6rem;
-    }
-
-    .logo-text {
-        font-size: .8rem;
-    }
-
-    .logo-icon {
-        font-size: 1.2rem;
-    }
-
-    /* LOGO DIV END */
-
-    /* SIDE BAR COMPONENTS START */
-    .nav-item {
-        padding: 1rem .4rem .01rem;
-        width: 7rem;
-    }
-
-    .sidebar-img {
-        width: 100%;
-    }
-
-    /* SIDE BAR COMPONENTS END */
-    /* ASIDE END */
-
-    /* HEADER START */
-    /* SEARCH DIV START */
-    .nav-search-box.form-control {
-        color: var(--primary-color);
-        font-size: .8rem;
-        font-weight: 500;
-        width: 5rem;
-    }
-
-    /* SEARCH DIV END */
-
-    /* HEADER ICON DIV START */
-    .header-icons-div {
-        margin: 0;
-        border-radius: 100px;
-    }
-
-    /* HEADER ICON DIV END */
-
-}
-
-
-
-
-
-
-/* start of phone styles */
-@media screen and (max-width: 479px) {
-
-    /* ie it ends at 479px */
-    body {
-        margin: 0;
-    }
-
-    .dashboard-div {
-        background-color: white;
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
-
-    /* HEADER START */
-    .pc-sidebar,
-    .pc-header {
-        display: none;
-    }
-
-    .phone-header {
-        display: block;
-        padding: 3% 0;
-        position: fixed;
-        background-color: white;
-        width: 100%;
-        z-index: 1;
-        top: 0;
-    }
-
-    /* LOGO DIV START  */
-    .open-sidebar {
-        color: var(--tertiary-color);
-        font-size: 1rem;
-        margin: 0 3% 0 0;
-    }
-
-    .logo-div {
-        margin: 2% 0 0;
-        display: inline-block;
-        width: auto;
-    }
-
-    .logo-text {
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
-
-    .logo-span {
-        color: var(--primary-color);
-    }
-
-    .logo-icon {
-        font-size: 1.6rem;
-        color: var(--tertiary-color);
-        vertical-align: middle;
-    }
-
-    /* LOGO DIV END */
-    .header-icons-div {
-        text-align: center;
-        display: inline-block;
-        box-shadow: none;
-        margin: 0;
-    }
-
-    .header-user-img {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-
-    .phone-user-header-div {
-        float: right;
-        margin: 0 10% 0 0;
-    }
-
-    .sidebar-components {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        margin: 0 0 0 -5%;
-        overflow-x: hidden;
-        background-color: white;
-        transition: 0.5s;
-        border: none;
-    }
-
-    .nav-item {
-        padding: 1rem .4rem .01rem;
-        width: auto;
-    }
-
-    .sidebar-img {
-        width: 100%;
-    }
-
-    /* HEADER END */
-
-
-
-}
-
-
-
-

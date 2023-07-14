@@ -1,0 +1,116 @@
+body {
+    background-color: #ebeefd;
+    font-family: 'Poppins', sans-serif;
+    margin: 2% auto;
+}
+
+:root {
+    --primary-color: #000D83;
+    --secondary-color: #4B5FDC;
+    --tertiary-color: #3EC4FF;
+    --quatenary-color: #F88081;
+}
+
+/* LOGO DIV START */
+.logo-text {
+    font-weight: 600;
+}
+
+.logo-span0 {
+    color: var(--primary-color);
+}
+
+.logo-icon {
+    font-size: 1.2rem;
+    color: var(--tertiary-color);
+    vertical-align: middle;
+
+}
+
+.admin-header-text {
+    font-weight: 600;
+}
+
+/* LOGO DIV END */
+
+/* BODY START */
+.body-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% auto auto;
+}
+
+.admin-card-div,
+.admin-card-div0 {
+    display: inline-block;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10% 0;
+    width: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.admin-card-div {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.admin-card-div:hover {
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+.admin-card-div0 {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.admin-card-div0:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.admin-card-icon {
+    font-size: 3rem;
+}
+
+.admin-card-div-text {
+    margin: 10% 0 0 0;
+    font-weight: 500;
+}
+/* BODY END */
+
+/* MEDIA QUERY START  */
+
+/* start of pc styles */
+@media screen and (max-width: 991px) {
+    /* ie it ends at 991px */
+
+    .admin-card-div,
+    .admin-card-div0 {
+        width: 12rem;
+        margin: auto auto auto 5%;
+    }
+}
+
+/* start of medium tablet styles */
+@media screen and (max-width: 767px) {
+    /* ie it ends at 767px */
+    
+    .admin-card-div,
+    .admin-card-div0 {
+        width: 15rem;
+    }
+}
+
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+    /* ie it ends at 479px */
+
+    .admin-card-div,
+    .admin-card-div0 {
+        width: 10rem;
+    }
+}
+
+/* MEDIA QUERY END  */

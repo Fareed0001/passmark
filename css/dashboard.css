@@ -294,15 +294,28 @@ body {
 /* dashboard instructor card end */
 /* DASHBOARD CONTENT END */
 
+/* AGENT DASHBOARD START  */
+
+.agent-student-header {
+    font-weight: 600;
+}
+
+.add-new-student-button {
+    float: right;
+    font-size: .8rem;
+}
+
+.agent-student-card {
+    width: 15rem;
+}
+
+.agent-student-card-link {
+    font-size: .9rem;
+}
 
 
 
-
-
-
-
-
-
+/* AGENT DASHBOARD END  */
 
 
 
