@@ -307,13 +307,16 @@ body {
 
 .agent-student-card {
     width: 15rem;
+    margin: auto;
 }
 
 .agent-student-card-link {
     font-size: .9rem;
 }
 
-
+.student-image {
+    height: 15rem;
+}
 
 /* AGENT DASHBOARD END  */
 
@@ -406,6 +409,21 @@ body {
     /* dashboard activity end  */
 
     /* dashboard content div end */
+
+    /* AGENT DASHBOARD START  */
+    .agent-row {
+        padding: 3%;
+    }
+
+    .agent-student-card {
+        width: 12rem;
+    }
+
+    .student-image {
+        height: 12rem;
+    }
+
+    /* AGENT DASHBOARD END  */
 }
 
 
@@ -512,8 +530,23 @@ body {
         font-size: .8rem;
     }
 
-
     /* dashboard content div end */
+
+    
+    /* AGENT DASHBOARD START  */
+    .agent-row {
+        padding: 6%;
+    }
+
+    .agent-student-card {
+        width: 18rem;
+    }
+
+    .student-image {
+        height: 18rem;
+    }
+
+    /* AGENT DASHBOARD END  */
 }
 
 
@@ -524,7 +557,6 @@ body {
 /* start of phone styles */
 @media screen and (max-width: 479px) {
     /* ie it ends at 479px */
-
 
     body {
         margin: 0;
@@ -682,4 +714,10 @@ body {
     }
 
     /* dashboard content div end */
+
+    /* AGENT DASHBOARD START  */
+    .agent-row {
+        padding: 10%;
+    }
+    /* AGENT DASHBOARD END  */
 }
