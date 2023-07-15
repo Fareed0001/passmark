@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passmark | Add class</title>
+    <title>Passmark | Set online class</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="images\logo\favicon.ico" type="image/x-icon">
     <!-- FOTAWESOME -->
@@ -19,19 +19,9 @@
 <body>
     <div class="container body-content">
 
-        <p class="header-text">Add a new class</p>
+        <p class="header-text">Schedule an online class</p>
         <form action="">
             <div class="row container">
-                <div class="input-field-div col-12 col-lg-6">
-                    <label for="classVideo" class="form-label">Select class video</label>
-                    <input class="form-control" type="file" id="classVideo" accept="video/mp4, video/x-m4v, video/*">
-                </div>
-
-                <div class="input-field-div col-12 col-lg-6">
-                    <label for="classPDF" class="form-label">Select class resource</label>
-                    <input class="form-control" type="file" id="classPDF" accept="application/pdf, application/vnd.ms-excel, application/epub, application/mobi, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
-                        text/plain, application/pdf, image/*">
-                </div>
 
                 <div class="input-field-div col-12 col-lg-6">
                     <label for="classTitle" class="form-label">Class title</label>
@@ -49,15 +39,19 @@
                         id="classDescription"></textarea>
                 </div>
 
-                <div class="input-field-div col-lg-12">
-                    <label class="form-label" for="">Select course</label>
-                    <select class="form-select">
-                        <option selected>Select course to add class to</option>
-                        <option value="1">Course One</option>
-                        <option value="2">Course Two</option>
-                        <option value="3">Course Three</option>
-                    </select>
+                <div class="input-field-div col-lg-6">
+                    <label class="form-label" for="classDate">Select class date</label>
+                    <input id="classDate" class="form-control" type="date">
                 </div>
+
+                <div class="input-field-div col-lg-6">
+                    <label class="form-label" for="classTime">Select class time</label>
+                    <input id="classTime" class="form-control" type="time">
+                </div>
+
+
+
+
 
             </div>
             <button class="btn btn-primary add-new-class-button" type="submit">Add new class</button>

@@ -1,0 +1,73 @@
+body {
+    background-color: #ebeefd;
+    font-family: 'Poppins', sans-serif;
+    margin: 2% auto;
+}
+
+/* body content start  */
+.body-content {
+    padding: 2%;
+}
+
+.header-text {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.input-field-div {
+    margin: auto auto 2%;
+}
+
+.form-label {
+    font-size: .9rem;
+}
+
+.text-area {
+    height: 6rem;
+}
+
+.add-new-instructor-button {
+    font-size: .9rem;
+    margin: 1% 0 0 1%;
+}
+/* body content end  */
+
+
+/* start of pc styles */
+@media screen and (max-width: 991px) {
+    /* ie it ends at 991px */
+    
+    .add-new-instructor-button {
+        margin: 3% 0 0 2%;
+     }
+}
+
+
+    /* start of medium tablet styles */
+@media screen and (max-width: 767px) {
+    /* ie it ends at 767px */
+    
+    .body-content {
+        padding: 5% 1%;
+    }
+
+    .add-new-instructor-button {
+        margin: 4% 0 0 3%;
+     }
+    
+}
+
+    
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+    /* ie it ends at 479px */
+    
+    .body-content {
+        padding: 5% 2%;
+    }
+
+    .add-new-instructor-button {
+       margin: 5% 0 0 4%;
+    }
+}

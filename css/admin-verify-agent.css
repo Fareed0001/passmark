@@ -1,0 +1,71 @@
+body {
+    background-color: #ebeefd;
+    font-family: 'Poppins', sans-serif;
+    margin: 2% auto;
+}
+
+/* body content start  */
+.body-content {
+    padding: 2%;
+}
+
+.header-text {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.agent-verification-div {
+    margin: 5% auto;
+}
+
+.new-agent-card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 18rem;
+    margin: auto;
+}
+
+.agent-card-body {
+    font-size: 1rem;
+    padding: 5%;
+}
+
+.agent-card-button {
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* start of pc styles */
+/* @media screen and (max-width: 991px) {
+    /* ie it ends at 991px 
+    
+} */
+
+
+    /* start of medium tablet styles */
+@media screen and (max-width: 767px) {
+    /* ie it ends at 767px */
+
+    .new-agent-card {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 22rem;
+        margin: auto;
+    }
+
+}
+
+    
+/* start of phone styles */
+/* @media screen and (max-width: 479px) {
+    /* ie it ends at 479px 
+
+} */
